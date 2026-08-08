@@ -1,4 +1,4 @@
-# Here is the **GitHub-Ready Markdown Cheat Sheet**. You can copy and paste this directly into a `README.md` file, a GitHub Gist, or a Wiki page.
+# Command Injection Payload.
 
 ---
 
